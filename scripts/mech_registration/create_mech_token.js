@@ -3,7 +3,7 @@ const { LedgerSigner } = require('@anders-t/ethers-ledger')
 
 async function main() {
 	const fs = require('fs')
-	const globalsFile = 'globals.json'
+	const globalsFile = 'globals_gnosis.json'
 	const dataFromJSON = fs.readFileSync(globalsFile, 'utf8')
 	let parsedData = JSON.parse(dataFromJSON)
 	const useLedger = parsedData.useLedger
