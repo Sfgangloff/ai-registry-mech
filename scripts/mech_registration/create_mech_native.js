@@ -17,6 +17,8 @@ async function main() {
 	const payload = parsedData.payload
 	const serviceId = parsedData.serviceId
 
+	const maxDeliveryRate = ethers.utils.defaultAbiCoder.encode(["uint256"], [payload]);
+
 	let networkURL = parsedData.networkURL
 	if (providerName === 'polygon') {
 		if (!process.env.ALCHEMY_API_KEY_MATIC) {
@@ -63,9 +65,9 @@ async function main() {
 	const result = await mechMarketplace
 		.connect(EOA)
 		.create(
-			1,
+			serviceId,
 			mechFactoryFixedPriceNativeAddress,
-			'0x0000000000000000000000000000000000000000000000000000000000000001',
+			maxDeliveryRate,
 			{ gasLimit: 6000000 }
 		)
 

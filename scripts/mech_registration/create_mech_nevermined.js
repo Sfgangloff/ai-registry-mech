@@ -16,6 +16,8 @@ async function main() {
 	const privateKey = parsedData.privateKey
 	const payload = parsedData.payload
 	const serviceId = parsedData.serviceId
+
+	const maxDeliveryRate = ethers.utils.defaultAbiCoder.encode(["uint256"], [payload]);
 	
 	let networkURL = parsedData.networkURL
 	if (providerName === 'polygon') {
@@ -65,7 +67,7 @@ async function main() {
 		.create(
 			serviceId,
 			mechFactoryNvmSubscriptionNativeAddress,
-			payload,
+			maxDeliveryRate,
 			{ gasLimit: 6000000 }
 		)
 
