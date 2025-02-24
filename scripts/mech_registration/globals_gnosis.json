@@ -1,0 +1,13 @@
+{"contractVerification":false,
+"useLedger":false,
+"derivationPath":"m/44'/60'/2'/0/0",
+"providerName":"gnosis",
+"gasPriceInGwei":"5",
+"mechMarketplaceProxyAddress":"0xf447fE00c1053A3489f63C4E4970C21F6782D9f3",
+"mechFactoryNvmSubscriptionNativeAddress":"0x65fd74C29463afe08c879a3020323DD7DF02DA57",
+"mechFactoryFixedPriceNativeAddress":"0x8b299c20F87e3fcBfF0e1B86dC0acC06AB6993EF",
+"mechFactoryFixedPriceTokenAddress":"0x31ffDC795FDF36696B8eDF7583A3D115995a45FA",
+"networkURL":"https://rpc.eu-central-2.gateway.fm/v4/gnosis/non-archival/mainnet",
+"privateKey":"",
+"payload":"",
+"serviceId":""}

@@ -1,0 +1,13 @@
+{"contractVerification":false,
+"useLedger":false,
+"derivationPath":"m/44'/60'/2'/0/0",
+"providerName":"base",
+"gasPriceInGwei":"5",
+"mechMarketplaceProxyAddress":"0xf24eE42edA0fc9b33B7D41B06Ee8ccD2Ef7C5020",
+"mechFactoryNvmSubscriptionNativeAddress":"0x847bBE8b474e0820215f818858e23F5f5591855A",
+"mechFactoryFixedPriceNativeAddress":"0x2E008211f34b25A7d7c102403c6C2C3B665a1abe",
+"mechFactoryFixedPriceTokenAddress":"0x97371B1C0cDA1D04dFc43DFb50a04645b7Bc9BEe",
+"networkURL":"https://base.llamarpc.com",
+"privateKey":"",
+"payload":"",
+"serviceId":""}
